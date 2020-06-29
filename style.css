@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'cmon_nearnormal';
+    src: url('cmonnear.eot');
+    src: url('cmonnear.eot?#iefix') format('embedded-opentype'),
+         url('cmonnear.woff') format('woff'),
+         url('cmonnear.svg#cmon_nearnormal') format('svg'),
+		 url('cmonnear.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lulusmaregular';
+    src: url('lulusma.eot');
+    src: url('lulusma.eot?#iefix') format('embedded-opentype'),
+         url('lulusma.woff') format('woff'),
+         url('lulusma.svg#lulusmaregular') format('svg'),
+		 url('lulusma.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+a {
+	text-decoration: none;
+	color: #945d41
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+ul {
+	text-align: left;
+	font-family: lulusmaregular;
+	font-size: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+	width: 6em
+}

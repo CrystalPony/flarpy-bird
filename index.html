@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+		<title>flARpy bird</title>
+	</head>
+	<body onkeypress="onInput()">
+		<div style = "text-align:center; font-family: 'cmon_nearnormal'">
+			<div id="game-elements">
+				<h1 style = "-webkit-user-select: none;
+							 -webkit-touch-select: none;
+							 -khtml-user-select: none;
+							 -moz-user-select: none;
+							 -ms-user-select: none;
+							 -o-user-select: none;
+							 user-select: none;">flARpy bird</h1>
+							 
+				<br><canvas id="canvas" width="300" height="512"></canvas>
+				
+				<br><br><br><br><h3>High Scores</h3>
+				<br><p id="high-scores"></p>
+				<br><br><a href='#' onclick="showScoresPage();">All scores</a>
+				<br><br><br><br><h3>How to play</h3>
+				<br><ul>
+					<li>Tap any key to make the bird flap and go up</li>
+					<li>Don't touch the obstacles, sky, or the ground</li>
+					<li>Get score by passing obstacles and collecting Arweave coins</li>
+					<li>Submit your score to earn a permanent place in the leaderboards, and have your egg show up in other people's games</li>
+				</ul>
+				<br><br><br><br><h3>Tip</h3>
+				<br><a href='https://etherscan.io/address/0xa47ae95fb0cce9929af6137a177658541808d10e' target="_blank">0xa47ae95fb0cce9929af6137a177658541808d10e</a>
+				<br><br><input type="number" id="tip" min="0" step="0.00000001" value="5" title="Tip amount">
+				<button type="button" id="tip-button" onclick="openTipFile()">Tip with AR</button>
+				<input type="file" id="tip-file" style="display:none" onchange="tip(event)">
+				<p id="tip-amount" style="font-family: lulusmaregular;"></p>
+			</div>
+			<div id="scores-elements" hidden>
+				<br><br>
+				<table>
+					<th>
+						<a href='#' onclick="showGamePage();"><img src="images/ui/back-button.png"></a>
+					</th>
+					<th style="align:center">
+						<h3>Scores:</h3>
+					</th>
+					<th>
+					</th>
+				<table>
+				<br><p id="scores"></p>
+			</div>
+		</div>
+		<script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
+		<script src="arweave-integration.js"></script>
+		<script src="game.js"></script>
+	</body>
+</html>
