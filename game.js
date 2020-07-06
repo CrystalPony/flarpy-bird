@@ -515,7 +515,7 @@ function onInput(e, forceRestartButton = false) {
 }
 
 function onMouseMove(e) {
-	mousePosition = [e.layerX, e.layerY];
+	mousePosition = [e.offsetX, e.offsetY];
 }
 
 function initBirdPosition() {
